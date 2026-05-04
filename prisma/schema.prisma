@@ -31,7 +31,6 @@ model Trip {
   startDate   DateTime
   endDate     DateTime
   createdAt   DateTime @default(now())
-
-  createdBy String
-  user      User   @relation(fields: [createdBy], references: [id])
+  createdBy   String
+  user        User     @relation(fields: [createdBy], references: [id])
 }

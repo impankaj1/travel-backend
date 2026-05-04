@@ -10,7 +10,7 @@ export class PrismaService extends PrismaClient implements OnModuleInit {
     });
 
     super({
-      adapter, // 👈 THIS IS THE KEY
+      adapter,
     });
   }
 
